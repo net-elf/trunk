@@ -112,6 +112,8 @@ namespace net.ELF.DBTool
                 string[] sqlItems = goSplitReg.Split(sqlString);
                 foreach (string sqlStr in sqlItems)
                 {
+                    if (string.IsNullOrEmpty(sqlStr))
+                        continue;
                     int num;
                     try
                     {

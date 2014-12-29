@@ -179,7 +179,7 @@ namespace {4}.DB
             string summary = Name;
             if (!string.IsNullOrEmpty(Comment))
             {
-                summary += "\r\n        ///" + Comment.Replace("\r\n","\n").Replace("\n", "\n        /// ");
+                summary += "\r\n        /// " + Comment.Replace("\r\n","\n").Replace("\n", "\n        /// ");
             }
             return summary;
         }
